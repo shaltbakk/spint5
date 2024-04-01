@@ -23,4 +23,8 @@ if input("message[y/n]:") == "y":
 else:
     print("git commit")
     printAndExecute('git commit')
-printAndExecute("git push origin master")
+if input("[y/n]:")!="y": 
+
+    printAndExecute("git push origin master")
+else:
+    printAndExecute("git push origin master -f")
