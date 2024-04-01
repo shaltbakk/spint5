@@ -22,7 +22,7 @@ def printAndExecute(command):
 printAndExecute("git status")
 printAndExecute("git add -A")
 printAndExecute('git commit -m "'+input("message")+'"')
-printAndExecute("git push")
+printAndExecute("git push origin main")
 userResponse = input("[y/n]:")
 print("userResponse:" + userResponse)
 
