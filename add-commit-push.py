@@ -19,10 +19,10 @@ def printAndExecute(command):
     print("\nExecuting: " + command)
     os.system(command)
 
-printAndExecute("git status")
-printAndExecute("git add -A")
-printAndExecute('git commit -m "'+input("message")+'"')
-printAndExecute("git push origin main")
+print("git status")
+print("git add -A")
+print('git commit -m ')
+print("git push")
 userResponse = input("[y/n]:")
 print("userResponse:" + userResponse)
 
@@ -33,8 +33,8 @@ if userResponse != "y":
 printAndExecute("git add -A")
 
 commitMessage=gitCommitMessage()
-commitCommand="git commit -m '" + commitMessage + "'"
+printAndExecute('git commit -m "'+input("message")+'"')
 
 
 printAndExecute("gitCommand")
-printAndExecute("git push")
+printAndExecute("git push main main")
