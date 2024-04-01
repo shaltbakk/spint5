@@ -1,17 +1,11 @@
 import os
 
 
-
-
-
 def printAndExecute(command):
     print("\nExecuting: " + command)
     os.system(command)
 
-print("git status")
-print("git add -A")
-print('git commit -m ')
-print("git push")
+print("git status \n git add -A \n git commit -m \n git push")
 userResponse = input("[y/n]:")
 print("userResponse:" + userResponse)
 
@@ -21,7 +15,7 @@ if userResponse != "y":
 
 printAndExecute("git add -A")
 
-if input("[y/n]:")!= "y":
+if input("message[y/n]:") == "y":
     printAndExecute('git commit -m "'+input("message")+'"')
 else:
     printAndExecute('git commit')
