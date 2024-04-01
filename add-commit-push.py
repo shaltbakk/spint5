@@ -37,4 +37,4 @@ printAndExecute('git commit -m "'+input("message")+'"')
 
 
 printAndExecute("gitCommand")
-printAndExecute("git push main master")
+printAndExecute("git push origin master")
