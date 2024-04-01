@@ -12,11 +12,15 @@ print("userResponse:" + userResponse)
 if userResponse != "y":
     print("Exiting")
     exit()
+print("git status\n") 
 printAndExecute("git status")
+print("git add -A\n")
 printAndExecute("git add -A")
 
 if input("message[y/n]:") == "y":
+    print("git commit -m")
     printAndExecute('git commit -m "'+input("message")+'"')
 else:
+    print("git commit")
     printAndExecute('git commit')
 printAndExecute("git push origin master")
